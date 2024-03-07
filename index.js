@@ -1,4 +1,4 @@
-// npm install -g mjpeg-local-stream
+// npm install -g @tejaswigowda/mjpeg-local-stream
 
 var MjpegProxy = require('mjpeg-proxy').MjpegProxy;
 var express = require('express');
@@ -20,3 +20,5 @@ var port = process.argv[3] || 9999
 app.get('/video', new MjpegProxy(url).proxyRequest);
 app.listen(port);
 console.log('Server started on port ' + port);
+console.log('Proxying ' + url);
+console.log('Open http://localhost:' + port + '/video in your browser');
