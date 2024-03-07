@@ -1,9 +1,9 @@
-// npm install -g @tejaswigowda/mjpeg-local-stream
+// npm install -g mjpeg-local-stream
+
 
 var MjpegProxy = require('mjpeg-proxy').MjpegProxy;
 var express = require('express');
 var app = express();
-//Access-Control-Allow-Origin: 
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -33,6 +33,7 @@ process.on('uncaughtException', function (err) {
 });
 
 app.listen(port);
-console.log('Server started on port ' + port);
 console.log('Proxying ' + url);
 console.log('Open http://localhost:' + port + '/video in your browser');
+
+

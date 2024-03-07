@@ -1,15 +1,13 @@
 {
   "name": "mjpeg-localhost-stream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Turn any mjpeg stream into a http://localhost:<port> proxy. ",
   "main": "index.js",
   "bin": "dist/src/index.js",
   "scripts": {
     "test": " mjpeg-localhost-stream",
     "start": "mjpeg-localhost-stream",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "minor-release": "npm version minor && npm publish && git push --follow-tags",
-    "major-release": "npm version major && npm publish && git push --follow-tags"
+    "run": "mjpeg-localhost-stream"
   },
   "repository": {
     "type": "git",
@@ -22,12 +20,13 @@
     "https"
   ],
   "author": "Tejaswi Gowda",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/tejaswigowda/mjpeg-localhost-stream/issues"
   },
   "homepage": "https://github.com/tejaswigowda/mjpeg-localhost-stream#readme",
   "dependencies": {
-    "@tejaswigowda/mjpeg-localhost-stream": "^1.0.0"
+    "express": "latest",
+    "mjpeg-proxy": "latest"
   }
 }
