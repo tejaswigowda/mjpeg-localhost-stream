@@ -1,0 +1,25 @@
+{
+  "name": "@tejaswigowda/mjpeg-localhost-stream",
+  "version": "1.0.0",
+  "description": "Turn any mjpeg stream into a http://localhost:<port> proxy. ",
+  "main": "index.js",
+  "scripts": {
+    "test": " mjpeg-localhost-stream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejaswigowda/mjpeg-localhost-stream.git"
+  },
+  "keywords": [
+    "mjpeg",
+    "proxy",
+    "CORS",
+    "https"
+  ],
+  "author": "Tejaswi Gowda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejaswigowda/mjpeg-localhost-stream/issues"
+  },
+  "homepage": "https://github.com/tejaswigowda/mjpeg-localhost-stream#readme"
+}
