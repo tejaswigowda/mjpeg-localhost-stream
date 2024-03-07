@@ -47,7 +47,8 @@ If you use this tool in an academic context, please cite the following publicati
   title = {mjpeg-localhost-stream},
   year = {2021},
   publisher = {GitHub},
-  journal = {GitHub repository}
+  journal = {GitHub repository},
+  url = {https://github.com/tejaswigowda/mjpeg-localhost-stream}
 }
 ```
 
