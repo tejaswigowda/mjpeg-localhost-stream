@@ -17,7 +17,21 @@ if (process.argv.length < 3) {
 var url = process.argv[2]
 var port = process.argv[3] || 9999
 
-app.get('/video', new MjpegProxy(url).proxyRequest);
+var proxy = new MjpegProxy(url);
+
+app.get('/video', function(req, res) {
+    proxy.proxyRequest(req, res);
+});
+
+// process error handler
+
+process.on('uncaughtException', function (err) {
+    // restart server
+    console.log('Caught exception: ' + err);
+    console.log('Restarting server');
+    proxy = new MjpegProxy(url);
+});
+
 app.listen(port);
 console.log('Server started on port ' + port);
 console.log('Proxying ' + url);

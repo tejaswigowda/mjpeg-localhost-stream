@@ -1,6 +1,6 @@
 {
   "name": "mjpeg-localhost-stream",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Turn any mjpeg stream into a http://localhost:<port> proxy. ",
   "main": "index.js",
   "bin": "dist/src/index.js",
